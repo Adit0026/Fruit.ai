@@ -1,0 +1,81 @@
+/* Translator.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  .response-area {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #0078d7;
+    color: white;
+  }
+  
+  .gpt-message {
+    align-self: flex-start;
+    background-color: #e5e5e5;
+    color: black;
+  }
+  
+  .prompt-area {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #0078d7;
+  }
+  
+  button.submit {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button.submit:hover {
+    background-color: #005fa1;
+  }
+  
